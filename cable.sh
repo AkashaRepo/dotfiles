@@ -1,10 +1,10 @@
 #!/bin/bash
 echo Ensure the leads are connected as follows
-echo Red
-echo -
-echo Black
-echo White
-echo Green
+echo \ _______________
+echo \|R*BWG*******...\|
+echo \|************...\|
+echo \|...............\|
+echo \|_______________\|
 echo is this correct?
 select yn in "Yes" "No"; do
     case $yn in
