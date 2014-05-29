@@ -1,6 +1,6 @@
 #!/bin/bash
-#Shows the user a diagram and then asks for confirmation.
-echo 'Ensure the leads are connected as follows'
+#This is a script to remind the user how to wire a USB console cable's colored leads to a Raspberry Pi's pins, and then connects to the Pi using the cable.
+echo 'Ensure the leads are connected as follows' #Shows the user a diagram and then asks for confirmation.
 echo '┎━━━━━━━━━━━━'
 echo '┃R*BWG*******'
 echo '┃************'
