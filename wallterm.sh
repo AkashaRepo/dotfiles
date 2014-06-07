@@ -1,5 +1,7 @@
 #!/bin/bash
 #I got this from https://bbs.archlinux.org/viewtopic.php?id=154094
+#Too use this, mark it as exicutable then add it to your list of startup applications.
+
 #Give a name to the terminal window.
 TITLE="Wallterm"
 #HxW size given in # of charactors. Example: 25x60
