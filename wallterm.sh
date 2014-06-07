@@ -1,7 +1,7 @@
 #!/bin/bash
 #I got this from https://bbs.archlinux.org/viewtopic.php?id=154094
 #Give a name to the terminal window.
-TITLE="Technica.sx"
+TITLE="Wallterm"
 #HxW size given in # of charactors. Example: 25x60
 DIMENSIONS=25x60
 #X+Y position given in pixels. Example: 100+200
