@@ -3,9 +3,9 @@
 #Give a name to the terminal window.
 TITLE="Technica.sx"
 #HxW size given in # of charactors. Example: 25x60
-DIMENSIONS= 25x60
+DIMENSIONS=25x60
 #X+Y position given in pixels. Example: 100+200
-POSITION= 100+200
+POSITION=100+200
 TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --maximize --title=$TITLE"
 
 if [[ -z $DIMENSIONS || -z $POSITION ]] || [[ -z $TITLE ]] ; then
