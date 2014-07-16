@@ -1,5 +1,7 @@
 #!/bin/bash
 #I got this from https://bbs.archlinux.org/viewtopic.php?id=154094
+#For some reason this opens up three terminals, one properly pinned, another fullscreen but not pinned, and another normal. Not sure what causes that.
+
 #Too use this, mark it as exicutable then add it to your list of startup applications.
 
 #Give a name to the terminal window.
