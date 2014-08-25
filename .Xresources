@@ -40,7 +40,6 @@ xscreensaver.passwd.thermometer.width:       8
 !
 ! http://ethanschoonover.com/solarized
 
-
 ! Common
 
 #define S_yellow        #b58900
@@ -51,7 +50,6 @@ xscreensaver.passwd.thermometer.width:       8
 #define S_blue          #268bd2
 #define S_cyan          #2aa198
 #define S_green         #859900
-
 
 ! Dark
 
