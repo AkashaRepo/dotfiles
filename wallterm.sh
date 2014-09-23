@@ -1,20 +1,13 @@
 #!/bin/bash
-#I got this from https://bbs.archlinux.org/viewtopic.php?id=154094
-#For some reason this opens up three terminals, one properly pinned, another fullscreen but not pinned, and another normal. Not sure what causes that.
-
-#Too use this, mark it as exicutable then add it to your list of startup applications.
+#Stolen from https://bbs.archlinux.org/viewtopic.php?id=154094
 
 #Give a name to the terminal window.
-<<<<<<< HEAD
-TITLE="wallterm"
-=======
 TITLE="Wallterm"
->>>>>>> 0037ab66264e232978f7c4fec59d6e55d9bb1552
 #HxW size given in # of charactors. Example: 25x60
-DIMENSIONS=25x60
+DIMENSIONS=16x16
 #X+Y position given in pixels. Example: 100+200
-POSITION=100+200
-TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --maximize --title=$TITLE"
+POSITION=1+1
+TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE --maximize"
 
 if [[ -z $DIMENSIONS || -z $POSITION ]] || [[ -z $TITLE ]] ; then
 	echo "wallterm has not been configured! Please edit this script before running it."
