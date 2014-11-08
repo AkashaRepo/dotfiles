@@ -2,12 +2,12 @@
 #Stolen from https://bbs.archlinux.org/viewtopic.php?id=154094
 
 #Give a name to the terminal window.
-TITLE="Wallterm"
+TITLE="Wallterm1"
 #HxW size given in # of charactors. Example: 25x60
-DIMENSIONS=16x16
+DIMENSIONS=107x30
 #X+Y position given in pixels. Example: 100+200
-POSITION=1+1
-TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE --maximize"
+POSITION=639+0
+TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE"
 
 if [[ -z $DIMENSIONS || -z $POSITION ]] || [[ -z $TITLE ]] ; then
 	echo "wallterm has not been configured! Please edit this script before running it."
