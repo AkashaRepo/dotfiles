@@ -118,3 +118,9 @@ setterm -blank 0
 
 #alias to send things to Zanthas
 alias spr="curl -F 'sprunge=<-' http://sprunge.us"
+
+#alias to make rice
+alias rice="./sfetch"
+
+#alias to make a new java class in nano.
+alias classy='sh ~/repo/bash/classy.sh'
