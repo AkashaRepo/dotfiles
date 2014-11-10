@@ -121,3 +121,6 @@ alias rice="./sfetch"
 
 #alias to make a new java class in nano.
 alias classy='sh ~/repo/bash/classy.sh'
+
+#alias for emacs
+alias emacs='emacs -nw'
