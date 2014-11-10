@@ -113,9 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#keeps the terminal from falling aseleep
-setterm -blank 0
-
 #alias to send things to Zanthas
 alias spr="curl -F 'sprunge=<-' http://sprunge.us"
 

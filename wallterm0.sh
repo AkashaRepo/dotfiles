@@ -6,7 +6,7 @@ TITLE="Wallterm0"
 #HxW size given in # of charactors. Example: 25x60
 DIMENSIONS=106x65
 #X+Y position given in pixels. Example: 100+200
-POSITION=0+0
+POSITION=0+18
 TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE"
 
 if [[ -z $DIMENSIONS || -z $POSITION ]] || [[ -z $TITLE ]] ; then
