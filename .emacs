@@ -21,4 +21,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 105 :width normal)))))
-;;(load-theme 'solarized-dark t)
+(package-initialize)
+(load-theme 'solarized-dark)
