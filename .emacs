@@ -22,4 +22,4 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 105 :width normal)))))
 (package-initialize)
-(load-theme 'solarized-dark)
+(if window-system (load-theme 'solarized-dark))
