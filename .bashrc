@@ -121,3 +121,9 @@ alias classy='sh ~/repo/bash/classy.sh'
 
 #alias for emacs
 alias emacs='emacs -nw'
+
+#alias for firefox
+alias firefox='chromium-browser'
+
+#alias for irc
+alias irc='ssh kunoichi@technica.sx'
