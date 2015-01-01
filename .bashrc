@@ -127,3 +127,6 @@ alias firefox='chromium-browser'
 
 #alias for irc
 alias irc='ssh kunoichi@technica.sx'
+
+#alias for look
+alias look='ls'

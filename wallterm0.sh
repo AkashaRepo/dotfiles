@@ -7,7 +7,7 @@ TITLE="Wallterm0"
 DIMENSIONS=106x65
 #X+Y position given in pixels. Example: 100+200
 POSITION=0+18
-TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE"
+TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE --maximize"
 
 if [[ -z $DIMENSIONS || -z $POSITION ]] || [[ -z $TITLE ]] ; then
 	echo "wallterm has not been configured! Please edit this script before running it."
