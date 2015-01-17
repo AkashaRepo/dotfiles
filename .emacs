@@ -22,6 +22,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 105 :width normal)))))
+ '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 80 :width normal)))))
 (package-initialize)
 (if window-system (load-theme 'solarized-dark))
+(bar-cursor-mode t)
+
+;;(set-frame-parameter (selected-frame) 'alpha '(85 85))
+;;(add-to-list 'default-frame-alist '(alpha 85 85))
