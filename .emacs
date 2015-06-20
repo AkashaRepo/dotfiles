@@ -33,3 +33,13 @@
 			 (scroll-bar-mode -1))
   ;;else
   (menu-bar-mode -1))
+
+
+;; multiple-cursors.el
+(add-to-list 'load-path "~/.emacs.d/plugins/multiple-cursors.el")
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-,") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-,") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-.") 'mc/mark-more-like-this-extended) 
