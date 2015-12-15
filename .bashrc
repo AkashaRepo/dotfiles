@@ -130,3 +130,6 @@ alias irc='ssh kunoichi@technica.sx'
 
 #alias for look
 alias look='ls'
+
+#alias for cmatrix
+alias bmatrix='cmatrix -ab -u 9 -C blue'

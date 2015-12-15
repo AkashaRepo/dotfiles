@@ -7,8 +7,12 @@
  '(cua-enable-cua-keys t)
  '(cua-mode t nil (cua-base))
  '(cua-normal-cursor-color "black")
- '(custom-safe-themes (quote ("fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
+ '(custom-enabled-themes (quote (solarized-dark)))
+ '(custom-safe-themes (quote ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
+ '(org-journal-enable-encryption nil)
+ '(org-journal-find-file (quote find-file))
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(server-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -16,7 +20,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 80 :width normal)))))
+ '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 80 :width normal))))
+ '(gnus-server-agent ((t (:foreground "#fdf6e3" :inverse-video nil :underline nil :slant normal :weight bold))) t))
 
 ;;manualy set variables
 (package-initialize)
@@ -25,7 +30,11 @@
 (column-number-mode t)
 (delete-selection-mode 1)
 (line-number-mode t)
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(require 'markdown-mode)
+;;journal
+(require 'org-journal)
+;;(org-journal-new-entry)  THIS PART BREAKS IT!
+
 ;;For windowed version
 (if window-system (progn (load-theme 'solarized-dark)
 			 (bar-cursor-mode t)
@@ -33,13 +42,3 @@
 			 (scroll-bar-mode -1))
   ;;else
   (menu-bar-mode -1))
-
-
-;; multiple-cursors.el
-(add-to-list 'load-path "~/.emacs.d/plugins/multiple-cursors.el")
-(require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C-,") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-,") 'mc/mark-all-like-this)
-(global-set-key (kbd "C-.") 'mc/mark-more-like-this-extended) 

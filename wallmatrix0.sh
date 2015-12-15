@@ -2,12 +2,12 @@
 #Stolen from https://bbs.archlinux.org/viewtopic.php?id=154094
 
 #Give a name to the terminal window.
-TITLE="Wallterm1"
+TITLE="MatrixWallpaper"
 #HxW size given in # of charactors. Example: 25x60
 DIMENSIONS=106x65
 #X+Y position given in pixels. Example: 100+200
 POSITION=0+18
-TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE --maximize"
+TERMOPTS="--hide-borders --hide-toolbar --hide-menubar --title=$TITLE --maximize --command=bmatrix"
 
 if [[ -z $DIMENSIONS || -z $POSITION ]] || [[ -z $TITLE ]] ; then
 	echo "wallterm has not been configured! Please edit this script before running it."
