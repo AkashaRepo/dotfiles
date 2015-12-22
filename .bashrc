@@ -119,14 +119,14 @@ alias spr="curl -F 'sprunge=<-' http://sprunge.us"
 #alias to make a new java class in nano.
 alias classy='sh ~/repo/bash/classy.sh'
 
-#alias for emacs
-alias emacs='emacs -nw'
+#alias for emacs BROKEN
+alias emacs='emacsclient -a emacs'
 
 #alias for firefox
 alias firefox='chromium-browser'
 
 #alias for irc
-alias irc='ssh kunoichi@technica.sx'
+alias irc='ssh kuno@ichi.hacked.jp'
 
 #alias for look
 alias look='ls'
