@@ -9,11 +9,15 @@
  '(cua-normal-cursor-color "black")
  '(custom-enabled-themes (quote (solarized-dark)))
  '(custom-safe-themes (quote ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
+ '(org-agenda-files (quote ("~/repo/journal/TODO.org" "~/Documents/journal/20151221")))
  '(org-journal-enable-encryption nil)
  '(org-journal-find-file (quote find-file))
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(send-mail-function (quote smtpmail-send-it))
  '(server-mode t)
  '(size-indication-mode t)
+ '(smtpmail-smtp-server "smtp.gmail.com")
+ '(smtpmail-smtp-service 587)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -33,7 +37,7 @@
 (require 'markdown-mode)
 ;;journal
 (require 'org-journal)
-;;(org-journal-new-entry)  THIS PART BREAKS IT!
+(org-journal-new-entry nil)
 
 ;;For windowed version
 (if window-system (progn (load-theme 'solarized-dark)
